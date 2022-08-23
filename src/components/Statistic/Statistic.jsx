@@ -2,7 +2,7 @@
 // import PropTypes from 'prop-types';
 // console.log()
 
-export const Statistic = ({title, stats}) => {
+export const Statistic = () => {
     return (
         <section class="statistics">
   <h2 class="title">Upload stats</h2>

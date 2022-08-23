@@ -1,6 +1,6 @@
-import { Profile } from './Profile/Profile'
+// import { Profile } from './Profile/Profile'
 import {Statistic} from './Statistic/Statistic'
-import userData from './user.json';
+// import userData from './user.json';
 
 
 export const App = () => {
