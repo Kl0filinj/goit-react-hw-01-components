@@ -27,7 +27,7 @@ export const UserListStats = styled.ul`
   border: 2px solid black;
   border-top: transparent;
   width: 25%;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
   justify-content: center;
 `;
 
