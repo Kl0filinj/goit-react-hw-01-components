@@ -4,7 +4,7 @@ export const ProfileContainer = styled.div`
   text-align: center;
   border: 2px solid black;
   border-bottom: transparent;
-  max-width: 25%;
+  max-width: 250;
   margin: 50px auto 0 auto;
 `;
 
@@ -26,7 +26,7 @@ export const UserListStats = styled.ul`
   align-items: center;
   border: 2px solid black;
   border-top: transparent;
-  max-width: 25%;
+  max-width: 250;
   margin: 0 auto 150px auto;
   justify-content: center;
 `;
