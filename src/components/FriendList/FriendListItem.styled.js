@@ -10,8 +10,21 @@ export const FriendsListItem = styled.li`
 `;
 
 export const FriendsStatus = styled.span`
-  background-color: green;
   padding: 7px;
   border-radius: 7px;
   margin: 0 10px;
+  background-color: ${props => {
+    switch (props.isOnline) {
+      case false:
+        return 'red';
+      default:
+        return 'green';
+    }
+  }};
+`;
+
+export const FriendsName = styled.p`
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 18px;
 `;
