@@ -1,7 +1,5 @@
 export const TransactionHistory = transactions => {
-  //   console.log(transactions.transactions);
-  //   let correctTrans = transactions.transactions;
-  //   console.log(correctTrans);
+  // console.log(transactions.transactions);
   return (
     <table>
       <thead>
@@ -14,9 +12,9 @@ export const TransactionHistory = transactions => {
       <tbody>
         {transactions.transactions.map(({ id, type, amount, currency }) => {
           <tr key={id}>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
           </tr>;
         })}
       </tbody>
