@@ -5,18 +5,18 @@ import {
 } from './Statistic.styled';
 import { getRandomHexColor } from '../getRandomHexColor';
 import PropTypes from 'prop-types';
-// console.log()
 
 export const Statistic = ({ title = null, stats }) => {
+  console.log(stats);
   return (
     <StaticContainer>
       {title !== null && <h2>{title}</h2>}
 
       <StatisticList>
-        {stats.map(stat => (
-          <StatisticListItem key={stat.id} bgColor={getRandomHexColor()}>
-            <span>{stat.label}</span>
-            <span>{stat.percentage}%</span>
+        {stats.map(({ id, label, percentage }) => (
+          <StatisticListItem key={id} bgColor={getRandomHexColor()}>
+            <span>{label}</span>
+            <span>{percentage}%</span>
           </StatisticListItem>
         ))}
       </StatisticList>

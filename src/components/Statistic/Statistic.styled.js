@@ -17,4 +17,3 @@ export const StatisticListItem = styled.li`
   padding: 16px;
   background-color: ${p => p.bgColor};
 `;
-// flex-basis: calc(100% / 3);
