@@ -1,10 +1,10 @@
 import { FriendListItem } from './FriendListItem';
-import { FriendsContainer } from './FriendList.styled';
+import { Box } from '../Box';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   return (
-    <FriendsContainer>
+    <Box my="150px" mx="auto" maxWidth="250px" textAlign="center" as="ul">
       {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendListItem
           avatar={avatar}
@@ -13,7 +13,7 @@ export const FriendList = ({ friends }) => {
           key={id}
         />
       ))}
-    </FriendsContainer>
+    </Box>
   );
 };
 

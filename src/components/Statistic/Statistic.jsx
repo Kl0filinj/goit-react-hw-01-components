@@ -1,15 +1,11 @@
-import {
-  StaticContainer,
-  StatisticList,
-  StatisticListItem,
-} from './Statistic.styled';
+import { StatisticList, StatisticListItem } from './Statistic.styled';
+import { Box } from '../Box';
 import { getRandomHexColor } from '../getRandomHexColor';
 import PropTypes from 'prop-types';
 
 export const Statistic = ({ title = null, stats }) => {
-  console.log(stats);
   return (
-    <StaticContainer>
+    <Box textAlign="center" as="section">
       {title !== null && <h2>{title}</h2>}
 
       <StatisticList>
@@ -20,7 +16,7 @@ export const Statistic = ({ title = null, stats }) => {
           </StatisticListItem>
         ))}
       </StatisticList>
-    </StaticContainer>
+    </Box>
   );
 };
 

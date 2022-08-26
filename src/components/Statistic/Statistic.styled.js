@@ -1,9 +1,5 @@
 import styled from '@emotion/styled';
 
-export const StaticContainer = styled.section`
-  text-align: center;
-`;
-
 export const StatisticList = styled.ul`
   display: flex;
   align-items: center;

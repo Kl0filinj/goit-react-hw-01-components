@@ -1,13 +1,5 @@
 import styled from '@emotion/styled';
 
-export const ProfileContainer = styled.div`
-  text-align: center;
-  border: 2px solid black;
-  border-bottom: transparent;
-  max-width: 250px;
-  margin: 50px auto 0 auto;
-`;
-
 export const UserName = styled.p`
   font-size: 25px;
   font-weight: 600;
@@ -19,16 +11,6 @@ export const UserTag = styled.p`
   font-weight: 500;
   font-size: 20px;
   padding: 8px 0;
-`;
-
-export const UserListStats = styled.ul`
-  display: flex;
-  align-items: center;
-  border: 2px solid black;
-  border-top: transparent;
-  max-width: 250px;
-  margin: 0 auto 150px auto;
-  justify-content: center;
 `;
 
 export const UserListItem = styled.li`

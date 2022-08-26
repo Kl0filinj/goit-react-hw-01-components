@@ -3,6 +3,7 @@ import {
   TableCell,
   TableHeadline,
 } from './TransactionHistory.styled';
+// import PropTypes from 'prop-types';
 
 export const TransactionHistory = transactions => {
   // console.log(transactions.transactions);
@@ -27,3 +28,15 @@ export const TransactionHistory = transactions => {
     </TransTable>
   );
 };
+
+// TransactionHistory.propTypes = {
+//   transactions: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       type: PropTypes.string.isRequired,
+//       amount: PropTypes.number.isRequired,
+//       currency: PropTypes.string.isRequired,
+//     })
+//   ),
+// };
+// ???????????
