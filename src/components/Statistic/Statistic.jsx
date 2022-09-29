@@ -1,6 +1,6 @@
 import { StatisticList, StatisticListItem } from './Statistic.styled';
 import { Box } from '../Box';
-import { getRandomHexColor } from '../getRandomHexColor';
+import { getRandomHexColor } from '../../utils/getRandomHexColor';
 import PropTypes from 'prop-types';
 
 export const Statistic = ({ title = null, stats }) => {
@@ -21,7 +21,7 @@ export const Statistic = ({ title = null, stats }) => {
 };
 
 Statistic.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
